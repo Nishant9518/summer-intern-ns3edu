@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style> 
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        body {
+            background-color:rgb(80, 204, 255);
+        }  
+    </style>     
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form action="">
+        <label for = "name">Name:</label> 
+        <input type = "text" name = "name" placeholder = "Enter your name"> <br> <br>
+        <select name = "gender" id = "gender">
+            <option value = "male">Male</option>    
+            <option value = "female">Female</option>
+            <option value = "other">Other</option>
+        </select> <br> <br>
+        <label for = "number">Number:</label>
+        <input type = "number" name = "number" placeholder = "Enter your number"> <br> <br>
+        <label for = "email">Email:</label> 
+        <input type = "email" name = "email" placeholder = "Enter your email"> <br> <br>
+        <label for = "course">Course:</label>
+        <input type ="text" name = "course" placeholder = "Enter your course"> <br> <br>
+        <input type = "submit" value = "Register">
+        <details>
+            <summary>Click to see the details</summary>
+            <p>By registering, you agree to our terms and conditions.</p>
+        </details>
+    </form>
+    
+</body>
+</html>
