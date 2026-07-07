@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Flexbox</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    background:linear-gradient(135deg,#74ebd5,#ACB6E5);
+}
+
+.container{
+    display:flex;
+    gap:20px;
+    padding:30px;
+    background:#ffffff;
+    border-radius:20px;
+    box-shadow:0 15px 35px rgba(0,0,0,0.2);
+}
+
+.box{
+    width:120px;
+    height:120px;
+    border-radius:15px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    font-size:35px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.4s ease;
+}
+
+.box:nth-child(1){
+    background:linear-gradient(135deg,#ff6a00,#ee0979);
+}
+
+.box:nth-child(2){
+    background:linear-gradient(135deg,#36D1DC,#5B86E5);
+}
+
+.box:nth-child(3){
+    background:linear-gradient(135deg,#11998e,#38ef7d);
+}
+
+.box:nth-child(4){
+    background:linear-gradient(135deg,#8E2DE2,#4A00E0);
+}
+
+.box:hover{
+    transform:translateY(-15px) scale(1.08);
+    box-shadow:0 15px 25px rgba(0,0,0,0.3);
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+    <div class="box">how</div>
+    <div class="box">are</div>
+    <div class="box">you</div>
+    <div class="box">Miss</div>
+</div>
+
+</body>
+</html>
